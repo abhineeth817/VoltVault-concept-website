@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import logo from "../images/logo.png";
+import heroImage from "../images/61KKF63m28L._SL1500.jpg";
+import constUpdateImage from "../images/const_update.jpg";
+import monitorImage from "../images/monitor.jpg";
+import customizeImage from "../images/customize.jpg";
+import controlImage from "../images/control.jpg";
+import dashboardImage from "../images/dashboard.jpg";
 
 export default function VoltVault() {
   const [page, setPage] = useState("features");
@@ -9,7 +16,7 @@ export default function VoltVault() {
       <nav className="bg-white shadow px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img
-            src="images\logo.png"
+            src={logo}
             alt="VoltVault logo"
             className="h-9 w-9 rounded-md border border-gray-300"
           />
@@ -48,7 +55,7 @@ export default function VoltVault() {
             <div className="bg-white rounded-2xl shadow overflow-hidden mb-6">
               <div className="h-80 flex items-center justify-center bg-gray-100 overflow-hidden">
                 <img
-                  src="images\61KKF63m28L._SL1500.jpg"
+                  src={heroImage}
                   alt="VoltVault Hero"
                   className="max-h-full max-w-full object-contain"
                 />
@@ -67,22 +74,22 @@ export default function VoltVault() {
                 {
                   title: "Energy Tracking",
                   desc: "Monitor real-time energy usage and optimize consumption.",
-                  img: "images\\const_update.jpg",
+                  img: constUpdateImage,
                 },
                 {
                   title: "Battery Health",
                   desc: "Track battery performance and lifecycle with insights.",
-                  img: "images\\monitor.jpg",
+                  img: monitorImage,
                 },
                 {
                   title: "Cost Savings",
                   desc: "View savings and reduce electricity bills efficiently.",
-                  img: "images\\customize.jpg",
+                  img: customizeImage,
                 },
                 {
                   title: "Smart Controls",
                   desc: "Easily switch between grid and battery usage.",
-                  img: "images\\control.jpg",
+                  img: controlImage,
                 },
               ].map((feature, idx) => (
                 <div key={idx} className="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col max-w-md w-full border border-gray-200">
@@ -111,7 +118,7 @@ export default function VoltVault() {
             {/* Optional Banner Image */}
             <div className="mb-6 rounded-2xl overflow-hidden shadow">
               <img
-                src="images\dashboard.jpg"
+                src={dashboardImage}
                 alt="Dashboard Banner"
                 className="w-full h-64 object-contain"
               />
