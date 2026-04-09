@@ -67,12 +67,12 @@ export default function VoltVault() {
                 {
                   title: "Energy Tracking",
                   desc: "Monitor real-time energy usage and optimize consumption.",
-                  img: "\\images\\monitor.jpg",
+                  img: "images\\const_update.jpg",
                 },
                 {
                   title: "Battery Health",
                   desc: "Track battery performance and lifecycle with insights.",
-                  img: "images\\61bksBsHaRL._SL1500.jpg",
+                  img: "images\\monitor.jpg",
                 },
                 {
                   title: "Cost Savings",
